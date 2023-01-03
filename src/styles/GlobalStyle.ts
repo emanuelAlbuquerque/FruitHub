@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, DefaultTheme } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 
   *{
-    font-family: 'Poppins', sans-serif;
+    font-family: ${({ theme }) => theme.Fonts.Poppins};
     box-sizing: border-box;
   }
 
@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */
