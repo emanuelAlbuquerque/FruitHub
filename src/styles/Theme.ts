@@ -22,8 +22,8 @@ export const theme: DefaultTheme = {
   },
 
   Fonts: {
-    Poppins: '"Poppins", sans-serif',
-    BadScript: '"Bad Script", sans-serif'
+    Poppins: 'Poppins, sans-serif',
+    BadScript: 'Bad Script, sans-serif'
   },
 
   Typography: {
