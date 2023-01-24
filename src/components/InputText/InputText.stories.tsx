@@ -22,4 +22,5 @@ const Tamplate: Story<IinputText> = (args) => {
 export const Default = Tamplate.bind({})
 Default.args = {
   placeholder: 'Olá mundo',
+  type: 'text'
 }
