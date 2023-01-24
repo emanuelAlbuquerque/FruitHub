@@ -1,8 +1,5 @@
-import React from "react"
-import { ThemeProvider } from "styled-components"
-import { theme } from '../src/styles/Theme'
-import { GlobalStyle } from "../src/styles/GlobalStyle"
 import { withTheme } from "./decorators/withTheme"
+import { themes } from '@storybook/theming';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -12,6 +9,9 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  docs: {
+    theme: themes.dark,
+  }
 }
 
 export const decorators = [
