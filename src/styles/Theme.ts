@@ -13,10 +13,11 @@ export const theme: DefaultTheme = {
     blueDark: '#27214D',
     whitishBlue: '#5D577E',
     blueOpacity: '#253F66',
-    grey: '#C2BDBDB2',
+    grey: '#C2BDBD',
     greyWithe: '#FAFAFA',
     greyDark: '#333333',
     greyBlack: '#403E3E',
+    greySmoke: '#F7F5F5',
     green: '#4CD964',
     smokeGreen: '#F0FEF8'
   },
