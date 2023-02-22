@@ -1,6 +1,6 @@
 import { IconTypeProps } from "Types/IconType";
 
-export const Minus = ({className, color = '#FFA451', size = 16}: IconTypeProps) => {
+export const MinusIcon = ({className, color = '#FFA451', size = 16}: IconTypeProps) => {
   return ( 
     <svg
       width={size}
