@@ -2,6 +2,10 @@ import { createGlobalStyle, DefaultTheme } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
 
+  :root{
+    font-size: 10px;
+  }
+
   *{
     font-family: ${({ theme }) => theme.Fonts.Poppins};
     box-sizing: border-box;

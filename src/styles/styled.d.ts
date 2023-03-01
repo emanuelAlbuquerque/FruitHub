@@ -66,6 +66,10 @@ declare module 'styled-components' {
         weight: string
         size: string
       },
+      CardSmall: {
+        weight: string,
+        size: string
+      },
     }
   }
 }

@@ -30,43 +30,47 @@ export const theme: DefaultTheme = {
   Typography: {
     DisplayLarge: {
       weight: '400',
-      size: '32px'
+      size: '3.2rem'
     },
     TitleLarge: {
       weight: '500',
-      size: '24px'
+      size: '2.4rem'
     },
     TitleMedium: {
       weight: '700',
-      size: '16px'
+      size: '1.6rem'
     },
     TitleSmall: {
       weight: '400',
-      size: '24px'
+      size: '2.4rem'
     },
     TextLarge: {
       weight: '400',
-      size: '18px'
+      size: '1.8rem'
     },
     TextRegular: {
       weight: '500',
-      size: '16px'
+      size: '1.6rem'
     },
     TextMedium: {
       weight: '400',
-      size: '16px'
+      size: '1.6rem'
     },
     TextSmall: {
       weight: '400',
-      size: '14px'
+      size: '1.4rem'
     },
     TextSmallLarge: {
       weight: '400',
-      size: '12px'
+      size: '1.2rem'
     },
     Card: {
       weight: '500',
-      size: '14px'
+      size: '1.4rem',
+    },
+    CardSmall: {
+      weight: '500',
+      size: '1.2rem'
     },
   }
 }
