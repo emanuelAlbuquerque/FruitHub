@@ -1,6 +1,10 @@
-import { IconTypeProps } from "Types/IconType"
+import { IconTypeProps } from 'Types/IconType'
 
-export const iconSearch = ({className, color = '#86869E', size = 16 }: IconTypeProps) => {
+export const IconSearch = ({
+  className,
+  color = '#86869E',
+  size = 16
+}: IconTypeProps) => {
   return (
     <svg
       width={size}
