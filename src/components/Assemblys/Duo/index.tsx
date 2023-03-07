@@ -3,7 +3,7 @@ import { Button } from 'components/Button'
 import { ReactNode } from 'react'
 import { ContainerStyleAssemblyDuo } from './style'
 
-export interface IDuo {
+export interface IAssemblyDuo {
   iconButtonSmall: ReactNode
   handleClickButtonSmall: () => void
 
@@ -11,12 +11,12 @@ export interface IDuo {
   handleClickButtonLarge: () => void
 }
 
-export const Duo = ({
+export const AssemblyDuo = ({
   handleClickButtonLarge,
   handleClickButtonSmall,
   iconButtonSmall,
   textButtonLarge
-}: IDuo) => {
+}: IAssemblyDuo) => {
   return (
     <ContainerStyleAssemblyDuo>
       <div className="container_button-secondary">
