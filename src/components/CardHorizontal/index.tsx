@@ -25,7 +25,9 @@ export const CardHorizontal = ({
     if (action === 'increment') {
       setCounter(counter + 1)
     } else {
-      setCounter(counter - 1)
+      if (counter > 1) {
+        setCounter(counter - 1)
+      }
     }
   }
 
@@ -37,7 +39,7 @@ export const CardHorizontal = ({
       <div className="options">
         <h2>{name}</h2>
         <Counter
-          counter={quantify}
+          counter={counter}
           variation="small"
           className="options_counter"
           handleUpdateAmountAdd={() => handleUpdateItem('increment')}

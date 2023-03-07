@@ -3,8 +3,6 @@ import { Plus } from 'components/Plus'
 import { Price } from 'components/Price'
 import { ContainerStyleCardVertical } from './style'
 
-import Prato from '../../assets/img/pratoBarry.svg'
-
 export interface ICardVertical {
   price: number
   nameDish: string
@@ -23,7 +21,7 @@ export const CardVertical = ({
       <button className="button_like">
         <IconHeart />
       </button>
-      <img src={img} alt="" />
+      <img src={img} alt="Imagem do Prato" />
       <h3>{nameDish}</h3>
       <div className="container_price">
         <Price price={price} />
