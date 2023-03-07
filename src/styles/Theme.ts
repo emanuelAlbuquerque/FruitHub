@@ -6,6 +6,7 @@ export const theme: DefaultTheme = {
 
   Colors: {
     orange: '#FFA451',
+    orangeDisabled: 'rbga(255, 164, 81, 0.1)',
     orangeWithe: '#FFF2E7',
     orangeSmoke: '#FCF6F0',
     withe: '#fff',
@@ -19,7 +20,7 @@ export const theme: DefaultTheme = {
     greyBlack: '#403E3E',
     greySmoke: '#F7F5F5',
     green: '#4CD964',
-    smokeGreen: '#F0FEF8'
+    smokeGreen: '#F0FEF8',
   },
 
   Fonts: {
@@ -30,6 +31,10 @@ export const theme: DefaultTheme = {
   Typography: {
     DisplayLarge: {
       weight: '400',
+      size: '3.2rem'
+    },
+    DisplayMediumn: {
+      weight: '500',
       size: '3.2rem'
     },
     TitleLarge: {

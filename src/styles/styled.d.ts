@@ -18,6 +18,7 @@ declare module 'styled-components' {
       greySmoke: string
       green: string
       smokeGreen: string
+      orangeDisabled: string
     },
 
     Fonts: {
@@ -27,6 +28,10 @@ declare module 'styled-components' {
 
     Typography: {
       DisplayLarge: {
+        weight: string
+        size: string
+      },
+      DisplayMediumn: {
         weight: string
         size: string
       },
