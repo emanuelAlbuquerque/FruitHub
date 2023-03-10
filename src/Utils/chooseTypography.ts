@@ -3,7 +3,7 @@ interface chooseFontProps {
   weight: string
 }
 
-export const escolheFonte = (variacao: chooseFontProps) => {
+export const chooseTypography = (variacao: chooseFontProps) => {
   return `
     font-size: ${variacao.size};
     font-weight: ${variacao.weight};
