@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 interface IContainerStyleCounter {
   variation: 'large' | 'small'
@@ -15,8 +15,8 @@ export const ContainerStyleCounter = styled.div<IContainerStyleCounter>`
   p{
     ${({ theme, variation }) =>
     variation === 'large' ?
-      escolheFonte(theme.Typography.TitleSmall) :
-      escolheFonte(theme.Typography.TextMedium)}
+      chooseTypography(theme.Typography.TitleSmall) :
+      chooseTypography(theme.Typography.TextMedium)}
     color: ${({ theme }) => theme.Colors.blueDark}
   }
 `

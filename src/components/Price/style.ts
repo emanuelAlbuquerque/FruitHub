@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 interface IContainerStylePrice {
   variation?: 'default' | 'large' | 'small'
@@ -11,17 +11,17 @@ export const ContainerStylePrice = styled.div<IContainerStylePrice>`
     switch (props.variation) {
       case 'large':
         return `
-          ${escolheFonte(props.theme.Typography.TitleLarge)}
+          ${chooseTypography(props.theme.Typography.TitleLarge)}
           color: ${props.theme.Colors.blueDark}
         `
       case 'small':
         return `
-          ${escolheFonte(props.theme.Typography.TextRegular)}
+          ${chooseTypography(props.theme.Typography.TextRegular)}
           color: ${props.theme.Colors.blueDark}
         `
       default:
         return `
-          ${escolheFonte(props.theme.Typography.Card)}
+          ${chooseTypography(props.theme.Typography.Card)}
           color: ${props.theme.Colors.orange}
         `
     }

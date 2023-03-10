@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { chooseTypography } from "Utils/chooseTypography";
 
 interface IContainerInput {
   variant: 'inputText' | 'inputForm'
@@ -46,8 +47,8 @@ export const ContainerInput = styled.div <IContainerInput>`
     background-color: ${({ theme }) => theme.Colors.greySmoke};
     color: ${({ theme }) => theme.Colors.grey};
     
-    font-size: ${props => props.theme.Typography.TextRegular.size};
-    font-weight: ${props => props.theme.Typography.TextRegular.weight};
+
+    ${({ theme }) => chooseTypography(theme.Typography.TextRegular)}
     
     &::placeholder{
       color: ${({ theme }) => theme.Colors.grey};

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStyleAppBar = styled.div`
 
@@ -27,8 +28,7 @@ export const ContainerStyleAppBar = styled.div`
 
       .welcome, .nameUser{
         color: ${({ theme }) => theme.Colors.blueDark};
-        font-size: ${({ theme }) => theme.Typography.TextSmall.size};
-        font-weight: ${({ theme }) => theme.Typography.TextSmall.weight};
+        ${({ theme }) => chooseTypography(theme.Typography.TextSmall)}
       }
 
       .nameUser::first-letter{

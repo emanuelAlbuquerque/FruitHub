@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStyleTitle = styled.h2`
 
-  ${({ theme }) => escolheFonte(theme.Typography.TextLarge)}
+  ${({ theme }) => chooseTypography(theme.Typography.TextLarge)}
 
   color: ${({ theme }) => theme.Colors.blueDark};
 

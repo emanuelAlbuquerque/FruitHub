@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { chooseTypography } from "Utils/chooseTypography"
 
 
 export const ContainerSearchStyle = styled.div`
@@ -29,8 +30,7 @@ export const ContainerSearchStyle = styled.div`
       background-color: transparent;
       
       color: ${({ theme }) => theme.Colors.grey};
-      font-size: ${({ theme }) => theme.Typography.TextSmallLarge.size};
-      font-weight: ${({ theme }) => theme.Typography.TextSmallLarge.weight};
+      ${({ theme }) => chooseTypography(theme.Typography.TextSmallLarge)}
       
       &::placeholder{
         color: ${({ theme }) => theme.Colors.grey};

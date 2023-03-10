@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 interface ContainerStyleCardVertical {
   variation: 'default' | 'small'
@@ -40,7 +40,7 @@ export const ContainerStyleCardVertical = styled.a<ContainerStyleCardVertical>`
   }
 
   h3{
-    ${({ theme }) => escolheFonte(theme.Typography.CardSmall)}
+    ${({ theme }) => chooseTypography(theme.Typography.CardSmall)}
     color:${({ theme }) => theme.Colors.blueDark};
     margin: 1rem 0;
   }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { chooseTypography } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStayleBack = styled.button`
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerPages = styled.div`
   width: 100%;
@@ -8,7 +8,7 @@ export const ContainerPages = styled.div`
 
 export const TitlePage = styled.h1`
   color: ${({ theme }) => theme.Colors.orange};
-  ${({ theme }) => escolheFonte(theme.Typography.DisplayMediumn)};
+  ${({ theme }) => chooseTypography(theme.Typography.DisplayMediumn)};
 
   margin-bottom: 3rem;
 `

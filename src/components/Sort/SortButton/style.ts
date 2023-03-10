@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStyleSortButton = styled.button`
   padding: .3rem 1rem;
@@ -11,8 +12,7 @@ export const ContainerStyleSortButton = styled.button`
 
   background-color: ${({ theme }) => theme.Colors.withe};
 
-  font-size: ${({ theme }) => theme.Typography.TextSmall.size};
-  font-weight: ${({ theme }) => theme.Typography.TextSmall.weight};
+  ${({ theme }) => chooseTypography(theme.Typography.TextSmall)}
 
   color: ${({ theme }) => theme.Colors.greyDark};
 `

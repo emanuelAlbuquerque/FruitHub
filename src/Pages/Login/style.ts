@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ContainerPages } from "styles/ContainerPages";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStylePageLogin = styled(ContainerPages)`
 
@@ -23,7 +23,7 @@ export const ContainerStylePageLogin = styled(ContainerPages)`
     a{
       display: block;
       color:${({ theme }) => theme.Colors.orange};
-      ${({ theme }) => escolheFonte(theme.Typography.TextSmall)};
+      ${({ theme }) => chooseTypography(theme.Typography.TextSmall)};
     }
   }
 

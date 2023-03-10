@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export interface IContainerStyleButton {
   variant: 'default' | 'secondary'
@@ -17,8 +18,7 @@ export const ContainerStyleButton = styled.button<IContainerStyleButton>`
 
   ${({ disabled }) => !disabled && 'cursor: pointer;'}
 
-  font-size: ${props => props.theme.Typography.TextRegular.size};
-  font-weight: ${props => props.theme.Typography.TextRegular.weight};
+  ${({ theme }) => chooseTypography(theme.Typography.TextRegular)}
 
   &:disabled{
     opacity: .7;

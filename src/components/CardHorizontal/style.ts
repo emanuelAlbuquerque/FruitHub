@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStyleCardHorizontal = styled.div`
 
@@ -27,7 +27,7 @@ export const ContainerStyleCardHorizontal = styled.div`
 
   .options{
     h2{
-      ${({ theme }) => escolheFonte(theme.Typography.TextRegular)}
+      ${({ theme }) => chooseTypography(theme.Typography.TextRegular)}
       color: ${({ theme }) => theme.Colors.greyDark};
     }
 

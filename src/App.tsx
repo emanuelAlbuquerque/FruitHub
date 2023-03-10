@@ -1,4 +1,4 @@
-import { RoutesAplication } from 'routes/routes'
+import { RoutesAplication } from 'routes/Routes'
 
 export const App = () => {
   return <RoutesAplication />

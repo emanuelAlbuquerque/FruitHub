@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ContainerPages } from "styles/ContainerPages";
-import { escolheFonte } from "Utils/chooseFont";
+import { chooseTypography } from "Utils/chooseTypography";
 
 interface IContainerStylePageSplash {
   seconds: number
@@ -20,7 +20,7 @@ export const ContainerStylePageSplash = styled(ContainerPages) <IContainerStyleP
     background-color: ${({ theme }) => theme.Colors.orange};
     color: ${({ theme }) => theme.Colors.withe};
 
-    ${({ theme }) => escolheFonte(theme.Typography.TitleSmall)}
+    ${({ theme }) => chooseTypography(theme.Typography.TitleSmall)}
 
     font-family: ${({ theme }) => theme.Fonts.BadScript};
 
