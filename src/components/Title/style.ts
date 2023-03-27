@@ -9,7 +9,6 @@ export const ContainerStyleTitle = styled.h2`
 
   position: relative;
 
-  padding-left: 1rem;
 
   &::before{
     content: '';
