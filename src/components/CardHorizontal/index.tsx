@@ -11,13 +11,16 @@ export interface ICardHorizontal {
 
   quantify: number
   price: number
+
+  className?: string
 }
 
 export const CardHorizontal = ({
   image,
   name,
   price,
-  quantify
+  quantify,
+  className
 }: ICardHorizontal) => {
   const [counter, setCounter] = useState(quantify)
 
@@ -32,7 +35,7 @@ export const CardHorizontal = ({
   }
 
   return (
-    <ContainerStyleCardHorizontal>
+    <ContainerStyleCardHorizontal className={className}>
       <div className="container_img">
         <img src={image} alt="" />
       </div>

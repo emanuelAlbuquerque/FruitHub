@@ -9,16 +9,19 @@ export interface IAssemblyDuo {
 
   textButtonLarge: string
   handleClickButtonLarge: () => void
+
+  className?: string
 }
 
 export const AssemblyDuo = ({
   handleClickButtonLarge,
   handleClickButtonSmall,
   iconButtonSmall,
-  textButtonLarge
+  textButtonLarge,
+  className
 }: IAssemblyDuo) => {
   return (
-    <ContainerStyleAssemblyDuo>
+    <ContainerStyleAssemblyDuo className={className}>
       <div className="container_button-secondary">
         <button onClick={handleClickButtonSmall}>{iconButtonSmall}</button>
       </div>

@@ -17,7 +17,7 @@ export const ContainerStyleCardHorizontal = styled.div`
     align-items: center;
     justify-content: center;
   
-    box-shadow: 0px 30px 60px rgba(32, 32, 32, 0.11);
+    box-shadow: 0px 10px 15px rgba(32, 32, 32, 0.1);
     
     img{
       width: 4rem;

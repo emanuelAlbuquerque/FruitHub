@@ -6,15 +6,18 @@ export interface IAssemblyDatails {
   price: number
   handleClick: () => void
   textButton: string
+
+  className?: string
 }
 
 export const AssemblyDatails = ({
   handleClick,
   price,
-  textButton
+  textButton,
+  className
 }: IAssemblyDatails) => {
   return (
-    <ContainerStyleAssemblyDatails>
+    <ContainerStyleAssemblyDatails className={className}>
       <div className="container_datails">
         <p className="container_datails-total">Total</p>
         <Price price={price} variation="small" />
