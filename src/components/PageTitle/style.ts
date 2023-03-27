@@ -3,9 +3,8 @@ import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStaylePageTitle = styled.div`
   width: 100%;
-  padding: 3rem 1.5rem;
+  padding: 4rem 1.5rem;
   background-color: ${({ theme }) => theme.Colors.orange};
-  border-radius: 0 0 2rem 2rem;
   
   
   div{
