@@ -7,7 +7,7 @@ export const ContainerStyleSort = styled.div`
   align-items: center;
   gap: .5rem;
   
-  overflow-x: scroll;
+  overflow-x: auto;
 
   background-color: ${({ theme }) => theme.Colors.greyWithe};
 `
