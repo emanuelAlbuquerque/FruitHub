@@ -1,16 +1,15 @@
-import { FilterIcon } from "assets/Icons/FilterIcon"
-import { SearchIcon } from "assets/Icons/SearchIcon"
-import { MutableRefObject, useRef } from "react"
-import { ContainerSearchStyle } from "./style"
+import { FilterIcon } from 'assets/Icons/FilterIcon'
+import { SearchIcon } from 'assets/Icons/SearchIcon'
+import { MutableRefObject, useRef } from 'react'
+import { ContainerSearchStyle } from './style'
 
-export interface ISearch{
+export interface ISearch {
   value: string
   onChangeSetValue: (e: React.ChangeEvent<HTMLInputElement>) => void
-  placeholder: string
+  placeholder?: string
 }
 
 export const Search = ({ onChangeSetValue, placeholder, value }: ISearch) => {
-  
   const inputRef = useRef() as MutableRefObject<HTMLInputElement>
 
   const onClickInputFocus = (): void => {
@@ -20,9 +19,9 @@ export const Search = ({ onChangeSetValue, placeholder, value }: ISearch) => {
   return (
     <ContainerSearchStyle>
       <div className="search_input" onClick={onClickInputFocus}>
-        <SearchIcon className="search_icon"/>
+        <SearchIcon className="search_icon" />
         <input
-          type="text" 
+          type="text"
           placeholder={placeholder}
           value={value}
           onChange={onChangeSetValue}
