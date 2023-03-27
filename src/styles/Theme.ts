@@ -21,6 +21,7 @@ export const theme: DefaultTheme = {
     greySmoke: '#F7F5F5',
     green: '#4CD964',
     smokeGreen: '#F0FEF8',
+    red: '#FF3B30'
   },
 
   Fonts: {

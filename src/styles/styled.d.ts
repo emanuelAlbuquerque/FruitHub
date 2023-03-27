@@ -18,7 +18,8 @@ declare module 'styled-components' {
       greySmoke: string
       green: string
       smokeGreen: string
-      orangeDisabled: string
+      orangeDisabled: string,
+      red: string
     },
 
     Fonts: {
