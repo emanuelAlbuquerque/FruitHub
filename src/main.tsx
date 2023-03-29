@@ -4,6 +4,7 @@ import { App } from 'App'
 import { ThemeProvider } from 'styled-components'
 import { theme } from 'styles/Theme'
 import { GlobalStyle } from 'styles/GlobalStyle'
+import 'leaflet/dist/leaflet.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -11,5 +12,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <GlobalStyle />
       <App />
     </ThemeProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
