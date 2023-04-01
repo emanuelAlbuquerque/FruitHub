@@ -6,17 +6,20 @@ interface ContainerStyleCardVertical {
   variation: 'default' | 'small'
 }
 
-export const ContainerStyleCardVertical = styled.a<ContainerStyleCardVertical>`
+export const ContainerStyleCardVertical = styled(Link) <ContainerStyleCardVertical>`
 
   display: block;
   text-align: center;
+
+  flex-shrink: 0;
+
+  text-decoration: none;
 
   width: 100%;
   max-width: ${({ variation }) => variation === 'default' ? '15rem' : '14rem'};
   padding: 1rem;
 
-  background: ${({ theme }) => theme.Colors.withe};
-  box-shadow: 0px 30px 60px rgba(32, 32, 32, 0.05);
+  background: ${({ theme }) => theme.Colors.orangeSmoke};
   border-radius: 1.6rem;
 
   position: relative;

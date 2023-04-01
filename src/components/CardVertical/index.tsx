@@ -17,7 +17,7 @@ export const CardVertical = ({
   variation = 'default'
 }: ICardVertical) => {
   return (
-    <ContainerStyleCardVertical variation={variation}>
+    <ContainerStyleCardVertical variation={variation} to={'/'}>
       <button className="button_like">
         <IconHeart />
       </button>
