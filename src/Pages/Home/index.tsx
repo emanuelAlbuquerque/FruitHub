@@ -5,7 +5,14 @@ import { Search } from 'components/Search'
 import { Sort } from 'components/Sort'
 import { Title } from 'components/Title'
 import { useState } from 'react'
-import { ContainerStylePageHome } from './style'
+import {
+  ContainerHomeCombos,
+  ContainerHomeCombosItem,
+  ContainerStylePageHome,
+  ContainerHomeHeader
+} from './style'
+
+import imgPrato from '../../assets/img/pratoBarry.svg'
 
 export const Home = () => {
   const [valueSearch, setValueSearch] = useState<string>('')
@@ -24,7 +31,7 @@ export const Home = () => {
 
   return (
     <ContainerStylePageHome>
-      <div>
+      <ContainerHomeHeader>
         <AppBar
           iconLeft={<Menu />}
           nameUser="Emanuel"
@@ -36,15 +43,81 @@ export const Home = () => {
           onChangeSetValue={handleChangeValueSerach}
           placeholder="Search for fruit salad combos"
         />
-      </div>
+      </ContainerHomeHeader>
+
       <Sort handleClickSetSort={handleClickSetSort} optionsSort={optionsSort} />
-      {/* <Title />
-      <div>
-        <CardVertical />
-      </div>
-      <div>
-        <CardVertical />
-      </div> */}
+
+      <ContainerHomeCombos>
+        <Title>Recommended Combo</Title>
+        <ContainerHomeCombosItem>
+          <CardVertical
+            variation="default"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="default"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="default"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="default"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="default"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+        </ContainerHomeCombosItem>
+      </ContainerHomeCombos>
+
+      <ContainerHomeCombos>
+        <Title>Recommended Combo</Title>
+        <ContainerHomeCombosItem>
+          <CardVertical
+            variation="small"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="small"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="small"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="small"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+          <CardVertical
+            variation="small"
+            price={2000}
+            nameDish={'Honey lime combo'}
+            img={imgPrato}
+          />
+        </ContainerHomeCombosItem>
+      </ContainerHomeCombos>
     </ContainerStylePageHome>
   )
 }
