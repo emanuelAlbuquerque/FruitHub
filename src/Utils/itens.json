@@ -1,14 +1,23 @@
 [
   {
-    "nome": "Salada",
-    "combo": "Salad Combo"
+    "nome": "Honey lime combo",
+    "price": 2000,
+    "img": "https://github.com/emanuelAlbuquerque",
+    "combo": "Salad Comb",
+    "categoria": "Hottest"
   },
   {
-    "nome": "Berrrys",
-    "combo": "Berry Combo"
+    "nome": "Berry mango combo",
+    "price": 2000,
+    "img": "https://github.com/emanuelAlbuquerque",
+    "combo": "Mango Berry",
+    "categoria": "Popular"
   },
   {
-    "nome": "Mangos",
-    "combo": "Mongo Berry"
+    "nome": "Tropical fruit salad",
+    "price": 2000,
+    "img": "https://github.com/emanuelAlbuquerque",
+    "combo": "Berry Combo",
+    "categoria": "New Combo"
   }
 ]
