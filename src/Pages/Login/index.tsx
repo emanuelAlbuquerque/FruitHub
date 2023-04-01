@@ -9,8 +9,10 @@ import LogoImg from '../../assets/img/imgLogo.svg'
 import { useState } from 'react'
 import { Logo } from 'components/Logo'
 import { Button } from 'components/Button'
+import { useNavigate } from 'react-router-dom'
 
 export const Login = () => {
+  const navigate = useNavigate()
   const [value, setValue] = useState({
     email: '',
     password: ''
@@ -50,7 +52,7 @@ export const Login = () => {
           onChange={handleChange}
         />
       </FormControl>
-      <Button onClick={() => console.log('Logado')} className="button">
+      <Button onClick={() => navigate('/home/1')} className="button">
         Login In
       </Button>
       <div className="login_next">
