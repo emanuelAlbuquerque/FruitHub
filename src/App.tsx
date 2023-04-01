@@ -1,5 +1,3 @@
 import { RoutesAplication } from 'routes/Routes'
 
-export const App = () => {
-  return <RoutesAplication />
-}
+export const App = () => <RoutesAplication />
