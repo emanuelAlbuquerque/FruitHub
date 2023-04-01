@@ -3,8 +3,7 @@ import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStyleAppBar = styled.div`
 
-  width: 100%;
-  padding: 0rem 1rem;
+  width: 100%;;
 
   display: flex;
   justify-content: space-between;

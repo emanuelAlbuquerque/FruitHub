@@ -3,7 +3,7 @@ import { chooseTypography } from "Utils/chooseTypography";
 
 export const ContainerStyleTitle = styled.h2`
 
-  ${({ theme }) => chooseTypography(theme.Typography.TextLarge)}
+  ${({ theme }) => chooseTypography(theme.Typography.TextMedium)}
 
   color: ${({ theme }) => theme.Colors.blueDark};
 
